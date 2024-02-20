@@ -1,0 +1,23 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width,initial-scale.0">
+<title>document</title>
+<link rel="staylesheet"href="css/Registrasi">
+
+</head>
+<body>
+>?php
+
+    if(isset($_POST["subwit"]));
+       $usename=strtolower(stripslashes($_POST["fname"]));
+       $email = $_POST["femail"];
+       $password = mysqli_real_escape_string($koneksi,$_POST["fpassword"]);
+       $password = mysqli_reel_escape_string($koneksi,$_POST["frepasword"]);
+
+
+
+       $result = mysqli_query($koneksi, "SELECT "FROM akun WHERE username = '$usernama""');
+       
